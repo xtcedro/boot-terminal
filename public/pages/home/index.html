@@ -1,29 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dominguez Tech Solutions — Boot Terminal</title>
+  <link rel="stylesheet" href="boot-terminal.css" />
+</head>
 <body class="boot-active">
 
-  <!-- 🌌 Matrix Rain Background Canvas (Behind Everything) -->
+  <!-- ✅ Matrix Rain Canvas (optional, for cinematic depth) -->
+  <canvas id="matrix-rain" class="matrix-canvas" aria-hidden="true"></canvas>
+
+  <!-- ✅ Boot Terminal Window -->
   <section id="boot-screen" class="boot-container" aria-label="System Boot Screen">
-
-    <canvas
-      id="matrix-rain"
-      class="matrix-canvas"
-      aria-hidden="true"
-    ></canvas>
-
-    <!-- 💬 Boot Terminal Window (In Front of Canvas) -->
     <div class="boot-terminal" role="region" aria-live="polite" aria-atomic="true">
+      <!-- 🖥️ Terminal Output -->
       <pre id="boot-output" class="boot-text" tabindex="0"></pre>
 
-      <!-- 🟩 Boot Progress Bar -->
+      <!-- 🟩 Progress Bar -->
       <div id="boot-progress-bar" class="progress-bar">
         <div id="boot-progress-fill" class="progress-fill"></div>
       </div>
-    </div>
 
+      <!-- ✅ Final Closing Motto -->
+      <div class="final-msg">
+        Puro Pa’ Delante 💪 — Todo sea por la familia 🙏
+      </div>
+    </div>
   </section>
 
-  <!-- 🚀 Application UI (Revealed After Boot) -->
+  <!-- ✅ Main Application Interface (Hidden Until Boot Completes) -->
   <main id="main-app" style="display: none;" role="main">
-    <!-- ✨ Your full application interface renders here -->
+    <!-- Your full application UI goes here after boot -->
   </main>
 
+  <!-- ✅ Your Boot Sequence Logic -->
+  <script type="module" src="boot-sequence.js"></script>
 </body>
+</html>

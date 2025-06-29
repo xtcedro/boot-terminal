@@ -1,4 +1,5 @@
 // load-components.js → v1.2 → Elite architecture
+import { initializeWebSocket, sendWebSocketMessage } from './wsClient.js';
 
 // 🧠 Load Boot Screen component
 export function loadBootScreen() {

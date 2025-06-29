@@ -3,6 +3,7 @@
 import { asciiLogo } from './asciiLogo.js';
 import { typeLineByLine, clearTerminal } from './typingengine.js';
 import { startMatrixRain } from './matrixRain.js';
+import { loadBootScreen } from './load-components.js';
 
 const CLIENT_NAME = window.CLIENT_NAME ?? "Dominguez Tech Solutions";
 const DTS_VERSION = "v1.5.2";

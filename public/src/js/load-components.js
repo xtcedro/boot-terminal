@@ -18,4 +18,4 @@ export function loadWebSocket(wsUrl = "wss://okdevs.xyz/api/ws") {
 }
 
 // 🧠 Export globally
-export { sendWebSocketMessage, showNotification };
+export { sendWebSocketMessage };

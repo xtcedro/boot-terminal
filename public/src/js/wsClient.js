@@ -1,4 +1,3 @@
-import { showNotification } from './notifications.js';
 
 let socket = null;
 

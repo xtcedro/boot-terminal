@@ -49,7 +49,7 @@ app.use(async (ctx, next) => {
 });
 
 app.use(oakCors({
-  origin: "https://domingueztechsolutions.com",
+  origin: "https://okdevs.xyz",
   credentials: true, // allow cookies if needed
 }));
 

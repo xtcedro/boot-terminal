@@ -40,10 +40,6 @@ function updateProgressBar(percent) {
 }
 
 export async function runBootSequence() {
-  if (sessionStorage.getItem('bootShown') === 'true') {
-    document.getElementById('main-app')?.style.setProperty('display', 'block');
-    return;
-  }
 
   document.body.classList.add('boot-active');
   await loadBootScreen();
